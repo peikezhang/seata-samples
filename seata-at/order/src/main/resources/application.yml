@@ -7,6 +7,10 @@ spring:
     url: jdbc:mysql://localhost/seata_order?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     username: root
     password: 64190565why
+  cloud:
+    alibaba:
+      seata:
+        tx-service-group: order_tx_group
 
 server:
   port: 8083
